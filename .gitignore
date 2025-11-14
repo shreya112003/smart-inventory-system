@@ -1,0 +1,14 @@
+# Python virtual environment
+backend/.venv/
+
+# Python cache
+backend/__pycache__/
+
+# Node modules
+frontend/node_modules/
+
+# Environment files
+backend/.env
+
+# Logs
+*.log
