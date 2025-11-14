@@ -1,0 +1,53 @@
+/* App.css — final polished styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+body, html { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: #f5f7fa; color: #111; }
+
+/* Container */
+.container { width: 92%; max-width: 1200px; margin: auto; }
+
+/* Header */
+.app-header { background: linear-gradient(90deg,#007DC6,#004A75); padding: 26px 0; color: #fff; box-shadow: 0 6px 24px rgba(0,48,135,0.12); }
+.header-flex { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.header-title { margin:0; font-size:28px; font-weight:700; }
+.header-sub { color:#FFD24A; margin-top:4px; font-size:13px; }
+.status-dot { background: rgba(255,255,255,0.12); padding:8px 12px; border-radius:12px; color:#fff; font-weight:600; }
+
+/* Main */
+.content-section { padding: 36px 0 60px; }
+
+/* Cards */
+.app-card { background:#fff; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); padding:10px; }
+.metric-card { background:#fff; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); transition:transform 0.18s; }
+.metric-card:hover { transform: translateY(-4px); }
+
+/* Metric inner */
+.metric-inner { display:flex; justify-content:space-between; align-items:center; padding:18px; }
+.metric-label { font-size:13px; color:#666; }
+.metric-value { font-size:28px; font-weight:700; color:#007DC6; margin:6px 0; }
+.metric-sub { font-size:12px; color:#888; }
+.metric-icon { opacity:0.85; }
+
+/* Inputs */
+.input-label { display:block; font-weight:600; margin-bottom:8px; color:#333; }
+.input-select { width:100%; height:44px; border-radius:10px; border:1px solid #ddd; padding:8px 12px; background:#fff; }
+.slider { margin-top:10px; }
+
+/* Button */
+.primary-button { background:#007DC6 !important; color:#fff !important; padding:12px; border-radius:10px; font-weight:600; }
+.primary-button:hover { background:#005F99 !important; }
+
+/* Charts */
+.chart-placeholder { text-align:center; padding:36px 0; color:#777; }
+
+/* Footer */
+.app-footer { text-align:center; padding:18px 0; margin-top:60px; color:#666; border-top:1px solid #eee; }
+
+/* Responsive */
+@media (max-width:768px) {
+  .header-flex { flex-direction:column; align-items:flex-start; }
+  .metric-inner { padding:14px; }
+  .metric-value { font-size:22px; }
+}
